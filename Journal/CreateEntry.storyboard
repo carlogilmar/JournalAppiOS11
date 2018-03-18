@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MaT-0F-x2U">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="b9J-yS-mCS" customClass="CreateEntry" customModule="Journal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jor-AL-Bhi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter a title" placeholder="Enter a title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sr-h7-gk1">
@@ -26,66 +26,77 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter a Body..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e23-ez-wRU">
-                                <rect key="frame" x="16" y="108" width="343" height="404"/>
+                                <rect key="frame" x="16" y="108" width="288" height="269"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCM-4K-grS" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                <rect key="frame" x="166" y="520" width="42" height="42"/>
+                                <rect key="frame" x="165" y="401" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oli-Jd-hCr" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                <rect key="frame" x="216" y="520" width="42" height="42"/>
+                                <rect key="frame" x="165" y="451" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHx-oM-AVo" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                <rect key="frame" x="266" y="520" width="42" height="42"/>
+                                <rect key="frame" x="214" y="451" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nJ-8P-ARv" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                <rect key="frame" x="316" y="520" width="42" height="42"/>
+                                <rect key="frame" x="265" y="451" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zaG-Wh-eoI" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                <rect key="frame" x="116" y="520" width="42" height="42"/>
+                                <rect key="frame" x="115" y="401" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNP-eM-NJS" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                <rect key="frame" x="66" y="520" width="42" height="42"/>
+                                <rect key="frame" x="64" y="401" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aK-Fk-csR" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                <rect key="frame" x="16" y="520" width="42" height="42"/>
+                                <rect key="frame" x="14" y="401" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-QU-5C9">
-                                <rect key="frame" x="153" y="570" width="69" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add a Tag"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxZ-GX-TCk">
-                                <rect key="frame" x="170" y="608" width="34" height="30"/>
+                                <rect key="frame" x="230" y="505" width="74" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save" destination="b9J-yS-mCS" eventType="touchUpInside" id="er3-h9-f22"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-QU-5C9">
+                                <rect key="frame" x="16" y="503" width="69" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add a Tag"/>
+                                <connections>
+                                    <action selector="addTag" destination="b9J-yS-mCS" eventType="touchUpInside" id="woV-eF-Ofw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="zTS-cR-gbr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create an Entry" id="E2F-hu-b6H"/>
+                    <connections>
+                        <outlet property="addTagButton" destination="Ezj-QU-5C9" id="6u4-PS-g64"/>
+                        <outlet property="bodyTextView" destination="e23-ez-wRU" id="b5m-1A-de1"/>
+                        <outlet property="titleTextField" destination="1sr-h7-gk1" id="ejl-RJ-LvK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WR-yW-qtt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="412" y="163.26836581709148"/>
+            <point key="canvasLocation" x="410.625" y="162.67605633802816"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gFW-BZ-0Ob">
@@ -93,7 +104,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MaT-0F-x2U" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y02-Jg-8lV">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

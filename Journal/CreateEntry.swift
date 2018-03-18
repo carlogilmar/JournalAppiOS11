@@ -6,4 +6,10 @@
 //  Copyright © 2018 Carlo Gilmar. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CreateEntry: UIViewController {
+    
+    
+    
+}

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D0D93B9205F3C4C0083A684 /* KeyboardScrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0D93B8205F3C4C0083A684 /* KeyboardScrollable.swift */; };
+		3D0D93BC205F468C0083A684 /* EntryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0D93BB205F468C0083A684 /* EntryList.storyboard */; };
 		3D2E0FE6205E4A3C005EE7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E0FE5205E4A3C005EE7E9 /* AppDelegate.swift */; };
 		3D2E0FE8205E4A3C005EE7E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E0FE7205E4A3C005EE7E9 /* ViewController.swift */; };
 		3D2E0FEB205E4A3C005EE7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2E0FE9205E4A3C005EE7E9 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		3D0D93B8205F3C4C0083A684 /* KeyboardScrollable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardScrollable.swift; sourceTree = "<group>"; };
+		3D0D93BB205F468C0083A684 /* EntryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryList.storyboard; sourceTree = "<group>"; };
 		3D2E0FE2205E4A3C005EE7E9 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2E0FE5205E4A3C005EE7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D2E0FE7205E4A3C005EE7E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				3D2E0FF9205E4E64005EE7E9 /* CreateEntry.storyboard */,
 				3D2E0FFD205E579F005EE7E9 /* ColorView.swift */,
 				3D2E0FFB205E566B005EE7E9 /* CreateEntry.swift */,
+				3D0D93BB205F468C0083A684 /* EntryList.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				3D2E0FF0205E4A3C005EE7E9 /* LaunchScreen.storyboard in Resources */,
 				3D2E0FED205E4A3C005EE7E9 /* Assets.xcassets in Resources */,
+				3D0D93BC205F468C0083A684 /* EntryList.storyboard in Resources */,
 				3D2E0FEB205E4A3C005EE7E9 /* Main.storyboard in Resources */,
 				3D2E0FFA205E4E64005EE7E9 /* CreateEntry.storyboard in Resources */,
 			);

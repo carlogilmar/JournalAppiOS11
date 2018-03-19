@@ -17,6 +17,17 @@ class EntryController{
         return []
     }
     
+    init(){
+        
+        let entry1 = Entry(title: "My Entry 1", body: "this is my 1 entry", tag: "Journal", color: .lightGray)
+        let entry2 = Entry(title: "My Entry 2", body: "this is my 2 entry", tag: "Journal", color: .lightGray)
+        let entry3 = Entry(title: "My Entry 3", body: "this is my 3 entry", tag: "Journal", color: .lightGray)
+        let entry4 = Entry(title: "My Entry 4", body: "this is my 4 entry", tag: "Journal", color: .lightGray)
+        let entry5 = Entry(title: "My Entry 5", body: "this is my 5 entry", tag: "Journal", color: .lightGray)
+        entries = [entry1, entry2, entry3, entry4, entry5]
+
+    }
+    
     // CRUD
     
     func createEntry(withTitle title:String, body:String, tag:String?=nil, color:UIColor){

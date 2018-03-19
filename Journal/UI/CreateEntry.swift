@@ -15,6 +15,11 @@ class CreateEntry: UIViewController {
     @IBOutlet weak var addTagButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        registerForKeyboardNotifications()
+    }
+    
     @IBAction func addTag(){
         presentAlertController()
     }
@@ -63,4 +68,15 @@ extension CreateEntry{
         present(alertController, animated:true, completion:nil)
     }
     
+}
+
+extension CreateEntry: KeyboardScrollable {
+    
+    func keyboardDidShow(_ notification: Notification) {
+        keyboardWasShow(notification)
+    }
+    
+    func keyboardWillHide(_ notification: Notification) {
+        keyboardWillBeHidden(notification)
+    }
 }

@@ -18,12 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vkX-Ct-ari">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vkX-Ct-ari">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EntryCell" textLabel="GCR-FK-Wau" detailTextLabel="2fJ-Wj-QQg" style="IBUITableViewCellStyleSubtitle" id="wos-U6-9yc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EntryCell" textLabel="GCR-FK-Wau" detailTextLabel="2fJ-Wj-QQg" style="IBUITableViewCellStyleSubtitle" id="wos-U6-9yc">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wos-U6-9yc" id="8qQ-WW-MwJ">
@@ -55,6 +54,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vkX-Ct-ari" firstAttribute="bottom" secondItem="3yq-x2-0fb" secondAttribute="bottom" id="EfC-hK-bpM"/>
+                            <constraint firstItem="vkX-Ct-ari" firstAttribute="leading" secondItem="3yq-x2-0fb" secondAttribute="leading" id="Guo-ib-EJt"/>
+                            <constraint firstItem="vkX-Ct-ari" firstAttribute="trailing" secondItem="3yq-x2-0fb" secondAttribute="trailing" id="Pr9-4m-bRx"/>
+                            <constraint firstItem="vkX-Ct-ari" firstAttribute="top" secondItem="pc7-MU-WLI" secondAttribute="top" id="Wdb-uR-m0j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3yq-x2-0fb"/>
                     </view>
                     <navigationItem key="navigationItem" id="DbP-8O-2u5">

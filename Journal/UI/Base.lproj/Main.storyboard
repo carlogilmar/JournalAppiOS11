@@ -36,22 +36,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cv5-dE-lID">
-                                <rect key="frame" x="0.0" y="-99" width="320" height="618"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cv5-dE-lID">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <connections>
                                     <segue destination="ycO-TC-f9p" kind="embed" id="rf1-Uk-4sQ"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cv5-dE-lID" firstAttribute="leading" secondItem="5VR-iL-unE" secondAttribute="leading" id="2Iz-rr-I9T"/>
+                            <constraint firstItem="cv5-dE-lID" firstAttribute="top" secondItem="uDo-mV-xmS" secondAttribute="top" id="HeR-F2-RmI"/>
+                            <constraint firstItem="cv5-dE-lID" firstAttribute="trailing" secondItem="5VR-iL-unE" secondAttribute="trailing" id="b5P-vo-NJq"/>
+                            <constraint firstItem="cv5-dE-lID" firstAttribute="bottom" secondItem="5VR-iL-unE" secondAttribute="bottom" id="sqc-hc-Ieb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5VR-iL-unE"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="Mgt-Ep-Tie"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZH8-f3-u7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605.60000000000002" y="431.33433283358323"/>
+            <point key="canvasLocation" x="603.75" y="430.98591549295776"/>
         </scene>
         <!--CreateEntry-->
         <scene sceneID="08I-Mm-GKv">
@@ -69,18 +74,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dss-Wh-l35">
-                                <rect key="frame" x="0.0" y="-99" width="320" height="618"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dss-Wh-l35">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <connections>
                                     <segue destination="3mV-u3-7XY" kind="embed" id="tUc-ie-D9P"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dss-Wh-l35" firstAttribute="trailing" secondItem="cLx-s4-NpT" secondAttribute="trailing" id="LTf-iZ-Kqa"/>
+                            <constraint firstItem="dss-Wh-l35" firstAttribute="top" secondItem="QU3-3P-F3h" secondAttribute="top" id="neD-Gw-fD0"/>
+                            <constraint firstItem="dss-Wh-l35" firstAttribute="bottom" secondItem="cLx-s4-NpT" secondAttribute="bottom" id="plW-nq-3eG"/>
+                            <constraint firstItem="dss-Wh-l35" firstAttribute="leading" secondItem="cLx-s4-NpT" secondAttribute="leading" id="tj7-33-ZD0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cLx-s4-NpT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="ASu-QA-KqF"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="ASu-QA-KqF">
+                        <color key="badgeColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggq-nl-DVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,5 +107,4 @@
             <point key="canvasLocation" x="1360" y="-97"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.67572808661717998" green="1" blue="0.63209494682891265" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

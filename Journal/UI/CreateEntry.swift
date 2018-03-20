@@ -28,6 +28,8 @@ class CreateEntry: UIViewController {
     }
     
     @IBAction func save(){
+        navigationController?.popViewController(animated: true)
+
         guard let title = titleTextField.text, !title.isEmpty,
             let body = bodyTextView.text, !body.isEmpty else {return}
         titleTextField.text = ""
@@ -42,6 +44,7 @@ class CreateEntry: UIViewController {
         EntryController.shared.createEntry(withTitle: title, body: body, tag: tag, color: .lightGray)
         
         resignResponders()
+        
     }
     
     @IBAction func dismiss(){

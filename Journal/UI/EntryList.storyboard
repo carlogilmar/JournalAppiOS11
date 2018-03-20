@@ -54,7 +54,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="3yq-x2-0fb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DbP-8O-2u5"/>
+                    <navigationItem key="navigationItem" id="DbP-8O-2u5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TF3-DL-zce">
+                            <connections>
+                                <segue destination="rMp-dj-BCt" kind="presentation" id="N3b-kS-ViZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="vkX-Ct-ari" id="VZe-2b-Mvu"/>
                     </connections>
@@ -62,6 +68,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8w-mq-em0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="160.80000000000001" y="196.55172413793105"/>
+        </scene>
+        <!--CreateEntry-->
+        <scene sceneID="PJJ-Ec-iFG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateEntry" id="rMp-dj-BCt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbU-cD-LmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="196"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o0W-nJ-ne1">

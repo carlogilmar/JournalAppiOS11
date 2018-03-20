@@ -47,7 +47,7 @@ class EntryController{
 
     
     func getEntries(with tag: String) -> [Entry]{
-        return entries.filter { $0.tag == tag }
+        return entries.filter { $0.tag.lowercased() == tag.lowercased() }
     }
     
     func updateEntry(_ entry: Entry, with title: String, body: String, tag: String? = nil, color:UIColor){

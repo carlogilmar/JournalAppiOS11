@@ -21,8 +21,17 @@ class EntryList: UIViewController{
 
 extension EntryList: UITableViewDataSource{
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return EntryController.shared.tags.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return EntryController.shared.tags[section]
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return EntryController.shared.entries.count
+        let tag = EntryController.shared.tags[section]
+        return EntryController.shared.getEntries(with: tag).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

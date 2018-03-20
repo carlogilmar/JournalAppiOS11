@@ -18,86 +18,140 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ccm-E1-O2O">
-                                <rect key="frame" x="0.0" y="56" width="320" height="514"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccm-E1-O2O">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GSF-gz-bYx" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="514"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSF-gz-bYx" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter a title" placeholder="Enter a title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sr-h7-gk1">
-                                                <rect key="frame" x="22" y="20" width="343" height="24"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter a title" placeholder="Enter a title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sr-h7-gk1">
+                                                <rect key="frame" x="12" y="20" width="296" height="17"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter a Body..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e23-ez-wRU">
-                                                <rect key="frame" x="22" y="52" width="277" height="269"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter a Body..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e23-ez-wRU">
+                                                <rect key="frame" x="22" y="45" width="277" height="228"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCM-4K-grS" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                <rect key="frame" x="155" y="345" width="42" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zaG-Wh-eoI" customClass="ColorView" customModule="Journal" customModuleProvider="target">
+                                                <rect key="frame" x="155" y="306" width="42" height="42"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="DYA-BN-wat"/>
+                                                    <constraint firstAttribute="width" constant="42" id="kWH-Dy-DJh"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oli-Jd-hCr" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                <rect key="frame" x="155" y="395" width="42" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNP-eM-NJS" customClass="ColorView" customModule="Journal" customModuleProvider="target">
+                                                <rect key="frame" x="245" y="306" width="42" height="42"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="6jv-hb-N2c"/>
+                                                    <constraint firstAttribute="width" constant="42" id="KRq-yn-Fpi"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHx-oM-AVo" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                <rect key="frame" x="201" y="395" width="42" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aK-Fk-csR" customClass="ColorView" customModule="Journal" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="352" width="42" height="42"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="42" id="Byf-vA-AXJ"/>
+                                                    <constraint firstAttribute="height" constant="42" id="gNo-Yh-fIS"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nJ-8P-ARv" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                <rect key="frame" x="246" y="395" width="42" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zaG-Wh-eoI" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                <rect key="frame" x="110" y="345" width="42" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNP-eM-NJS" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                <rect key="frame" x="65" y="345" width="42" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aK-Fk-csR" customClass="ColorView" customModule="Journal" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="345" width="42" height="42"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-QU-5C9">
-                                                <rect key="frame" x="22" y="447" width="69" height="47"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-QU-5C9">
+                                                <rect key="frame" x="126" y="422" width="69" height="30"/>
                                                 <state key="normal" title="Add a Tag"/>
                                                 <connections>
                                                     <action selector="addTag" destination="b9J-yS-mCS" eventType="touchUpInside" id="woV-eF-Ofw"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxZ-GX-TCk">
-                                                <rect key="frame" x="236" y="449" width="74" height="43"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxZ-GX-TCk">
+                                                <rect key="frame" x="143" y="454" width="34" height="30"/>
                                                 <state key="normal" title="Save"/>
                                                 <connections>
                                                     <action selector="save" destination="b9J-yS-mCS" eventType="touchUpInside" id="er3-h9-f22"/>
                                                 </connections>
                                             </button>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nJ-8P-ARv" customClass="ColorView" customModule="Journal" customModuleProvider="target">
+                                                <rect key="frame" x="110" y="352" width="42" height="42"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="Ubd-IZ-2Ii"/>
+                                                    <constraint firstAttribute="width" constant="42" id="h9K-Uy-Zhw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHx-oM-AVo" customClass="ColorView" customModule="Journal" customModuleProvider="target">
+                                                <rect key="frame" x="155" y="352" width="42" height="42"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="PiX-0U-Yvr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCM-4K-grS" customClass="ColorView" customModule="Journal" customModuleProvider="target">
+                                                <rect key="frame" x="200" y="306" width="42" height="42"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oli-Jd-hCr" customClass="ColorView" customModule="Journal" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="352" width="41" height="42"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="0lK-yf-bkq"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="fHx-oM-AVo" firstAttribute="top" secondItem="GSF-gz-bYx" secondAttribute="top" constant="352" id="0L1-Gm-2HB"/>
+                                            <constraint firstItem="fHx-oM-AVo" firstAttribute="leading" secondItem="GSF-gz-bYx" secondAttribute="trailing" constant="-165" id="2tG-Di-eE6"/>
+                                            <constraint firstItem="9nJ-8P-ARv" firstAttribute="top" secondItem="Oli-Jd-hCr" secondAttribute="top" id="4I4-Pg-JJc"/>
+                                            <constraint firstItem="cNP-eM-NJS" firstAttribute="top" secondItem="e23-ez-wRU" secondAttribute="bottom" constant="33" id="816-FA-m0U"/>
+                                            <constraint firstAttribute="trailing" secondItem="1sr-h7-gk1" secondAttribute="trailing" constant="12" id="8en-sO-CSi"/>
+                                            <constraint firstItem="dxZ-GX-TCk" firstAttribute="top" secondItem="Ezj-QU-5C9" secondAttribute="bottom" constant="2" id="9Fp-oL-wGd"/>
+                                            <constraint firstItem="1sr-h7-gk1" firstAttribute="leading" secondItem="GSF-gz-bYx" secondAttribute="leading" constant="12" id="9tr-sG-MFN"/>
+                                            <constraint firstItem="6aK-Fk-csR" firstAttribute="top" secondItem="e23-ez-wRU" secondAttribute="bottom" constant="79" id="FSP-XX-66M"/>
+                                            <constraint firstAttribute="bottom" secondItem="dxZ-GX-TCk" secondAttribute="bottom" constant="20" id="HPv-nb-H4t"/>
+                                            <constraint firstItem="6aK-Fk-csR" firstAttribute="leading" secondItem="GSF-gz-bYx" secondAttribute="leading" constant="20" id="HeV-bs-dG7"/>
+                                            <constraint firstItem="cNP-eM-NJS" firstAttribute="top" secondItem="GSF-gz-bYx" secondAttribute="top" constant="306" id="THM-2C-P1b"/>
+                                            <constraint firstItem="1sr-h7-gk1" firstAttribute="top" secondItem="GSF-gz-bYx" secondAttribute="top" constant="20" id="U7j-4n-Xam"/>
+                                            <constraint firstItem="cNP-eM-NJS" firstAttribute="leading" secondItem="nCM-4K-grS" secondAttribute="trailing" constant="3" id="WH2-wU-OMJ"/>
+                                            <constraint firstItem="9nJ-8P-ARv" firstAttribute="centerX" secondItem="GSF-gz-bYx" secondAttribute="centerX" id="a93-dy-Lvs"/>
+                                            <constraint firstItem="Oli-Jd-hCr" firstAttribute="leading" secondItem="GSF-gz-bYx" secondAttribute="trailing" constant="-255" id="bnZ-w0-wlk"/>
+                                            <constraint firstItem="cNP-eM-NJS" firstAttribute="top" secondItem="zaG-Wh-eoI" secondAttribute="top" id="cdr-aa-QFD"/>
+                                            <constraint firstItem="9nJ-8P-ARv" firstAttribute="top" secondItem="fHx-oM-AVo" secondAttribute="top" id="eYM-S6-aEV"/>
+                                            <constraint firstItem="zaG-Wh-eoI" firstAttribute="leading" secondItem="fHx-oM-AVo" secondAttribute="leading" id="gsX-9d-Pqd"/>
+                                            <constraint firstItem="cNP-eM-NJS" firstAttribute="top" secondItem="nCM-4K-grS" secondAttribute="top" id="hHf-ug-NIa"/>
+                                            <constraint firstItem="e23-ez-wRU" firstAttribute="top" secondItem="1sr-h7-gk1" secondAttribute="bottom" constant="8" id="hSo-4V-pKt"/>
+                                            <constraint firstAttribute="trailing" secondItem="e23-ez-wRU" secondAttribute="trailing" constant="21" id="ic0-BU-HB6"/>
+                                            <constraint firstItem="Ezj-QU-5C9" firstAttribute="centerX" secondItem="GSF-gz-bYx" secondAttribute="centerX" id="igf-oR-9BE"/>
+                                            <constraint firstAttribute="trailing" secondItem="cNP-eM-NJS" secondAttribute="trailing" constant="33" id="jN4-zy-twb"/>
+                                            <constraint firstItem="9nJ-8P-ARv" firstAttribute="leading" secondItem="Oli-Jd-hCr" secondAttribute="trailing" constant="3" id="p0m-EC-Tjr"/>
+                                            <constraint firstItem="nCM-4K-grS" firstAttribute="leading" secondItem="GSF-gz-bYx" secondAttribute="trailing" constant="-120" id="qWY-Lk-fvV"/>
+                                            <constraint firstAttribute="trailing" secondItem="fHx-oM-AVo" secondAttribute="trailing" constant="123" id="sHf-3c-I3V"/>
+                                            <constraint firstItem="cNP-eM-NJS" firstAttribute="bottom" secondItem="nCM-4K-grS" secondAttribute="bottom" id="vTk-bo-Zbc"/>
+                                            <constraint firstItem="dxZ-GX-TCk" firstAttribute="centerX" secondItem="GSF-gz-bYx" secondAttribute="centerX" id="x35-8o-ggM"/>
+                                            <constraint firstItem="e23-ez-wRU" firstAttribute="leading" secondItem="GSF-gz-bYx" secondAttribute="leading" constant="22" id="yeS-3T-sRL"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="GSF-gz-bYx" firstAttribute="top" secondItem="Ccm-E1-O2O" secondAttribute="top" id="6gL-W0-jL9"/>
+                                    <constraint firstItem="GSF-gz-bYx" firstAttribute="leading" secondItem="Ccm-E1-O2O" secondAttribute="leading" id="6ve-hy-5FO"/>
+                                    <constraint firstAttribute="trailing" secondItem="GSF-gz-bYx" secondAttribute="trailing" id="8m3-Zl-eSw"/>
+                                    <constraint firstAttribute="bottom" secondItem="GSF-gz-bYx" secondAttribute="bottom" id="hII-nf-uA7"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GSF-gz-bYx" firstAttribute="height" secondItem="Ccm-E1-O2O" secondAttribute="height" id="6I5-ry-eHi"/>
+                            <constraint firstItem="Ccm-E1-O2O" firstAttribute="leading" secondItem="zTS-cR-gbr" secondAttribute="leading" id="DPh-W6-r7S"/>
+                            <constraint firstAttribute="bottom" secondItem="Ccm-E1-O2O" secondAttribute="bottom" id="M1d-t7-3Ck"/>
+                            <constraint firstItem="GSF-gz-bYx" firstAttribute="width" secondItem="Ccm-E1-O2O" secondAttribute="width" id="SMb-gm-Siv"/>
+                            <constraint firstItem="Ccm-E1-O2O" firstAttribute="trailing" secondItem="zTS-cR-gbr" secondAttribute="trailing" id="UWs-vx-eq4"/>
+                            <constraint firstItem="Ccm-E1-O2O" firstAttribute="top" secondItem="zTS-cR-gbr" secondAttribute="top" id="lfX-C8-mnD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zTS-cR-gbr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create an Entry" id="E2F-hu-b6H"/>

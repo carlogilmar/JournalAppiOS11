@@ -14,12 +14,16 @@ class EntryController{
     
     var entries:[Entry] = []
     var tags:[String] {
-        return []
+        var tags = Set<String>()
+        entries.forEach {
+            tags.update(with: $0.tag.capitalized)
+        }
+        return Array(tags).sorted()
     }
     
     init(){
         
-        let entry1 = Entry(title: "My Entry 1", body: "this is my 1 entry", tag: "Journal", color: .lightGray)
+        let entry1 = Entry(title: "My Entry 1 can u see me?", body: "this is my 1 entry", tag: "Journal", color: .lightGray)
         let entry2 = Entry(title: "My Entry 2", body: "this is my 2 entry", tag: "Journal", color: .lightGray)
         let entry3 = Entry(title: "My Entry 3", body: "this is my 3 entry", tag: "Journal", color: .lightGray)
         let entry4 = Entry(title: "My Entry 4", body: "this is my 4 entry", tag: "Journal", color: .lightGray)
@@ -41,6 +45,7 @@ class EntryController{
         return entries[indexPath.row]
     }
 
+    
     func getEntries(with tag: String) -> [Entry]{
         return entries.filter { $0.tag == tag }
     }

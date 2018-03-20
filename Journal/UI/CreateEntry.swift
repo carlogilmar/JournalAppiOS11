@@ -41,6 +41,10 @@ class CreateEntry: UIViewController {
         resignResponders()
     }
     
+    @IBAction func dismiss(){
+        dismiss(animated: true, completion: nil)
+    }
+    
     func resignResponders(){
         titleTextField.resignFirstResponder()
         bodyTextView.resignFirstResponder()

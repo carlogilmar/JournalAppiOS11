@@ -100,7 +100,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="zTS-cR-gbr"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Create an Entry" id="E2F-hu-b6H"/>
+                    <navigationItem key="navigationItem" title="Create an Entry" id="E2F-hu-b6H">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="VLO-X9-gpX">
+                            <connections>
+                                <action selector="dismiss" destination="b9J-yS-mCS" id="w7T-0S-T6l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addTagButton" destination="Ezj-QU-5C9" id="6u4-PS-g64"/>
                         <outlet property="bodyTextView" destination="e23-ez-wRU" id="b5m-1A-de1"/>

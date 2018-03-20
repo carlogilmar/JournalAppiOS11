@@ -48,10 +48,22 @@ extension EntryList: UITableViewDataSource{
 extension EntryList: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80.0
+        return 100.0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+}
+
+extension EntryList {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?){
+        if segue.identifier == "CreateEntrySegue" {
+            guard let vc = segue.destination as? CreateEntry,
+                let indexPath = tableView.indexPathForSelectedRow else {return}
+            let entry = EntryController.shared.getEntry(at:indexPath)
+            vc.entry = entry
+        }
     }
 }

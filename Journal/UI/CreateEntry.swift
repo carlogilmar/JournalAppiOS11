@@ -15,8 +15,11 @@ class CreateEntry: UIViewController {
     @IBOutlet weak var addTagButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var entry:Entry?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(entry)
         registerForKeyboardNotifications()
     }
     

@@ -23,7 +23,7 @@ class EntryController{
     
     init(){
         
-        let entry1 = Entry(title: "My Entry 1 can u see me?", body: "this is my 1 entry", tag: "Journal", color: .lightGray)
+        let entry1 = Entry(title: "My Entry 1 can u see me?", body: "this is my 1 entry, esta es mi primera aplicación de iOS 11 con swift 4, espero que todo esto salga. Salu2 a Packt Pub!!!! iOS es una buena plataforma y muy elegante. Programming IOS es un mundo nuevo que si requiere entender muchas cosas para hacer iOS 11 con swift 4", tag: "Journal", color: .lightGray)
         let entry2 = Entry(title: "My Entry 2", body: "this is my 2 entry", tag: "Journal", color: .lightGray)
         let entry3 = Entry(title: "My Entry 3", body: "this is my 3 entry", tag: "Journal", color: .lightGray)
         let entry4 = Entry(title: "My Entry 4", body: "this is my 4 entry", tag: "Journal", color: .lightGray)

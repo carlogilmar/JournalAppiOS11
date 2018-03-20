@@ -15,6 +15,7 @@ class EntryList: UIViewController{
     override func viewDidLoad() {
         super .viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
 }
@@ -42,4 +43,15 @@ extension EntryList: UITableViewDataSource{
             return cell
     }
     
+}
+
+extension EntryList: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 }
